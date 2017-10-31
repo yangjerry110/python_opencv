@@ -13,6 +13,9 @@ blur = cv2.bilateralFilter(img,9,75,75)
 plt.subplot(1,2,1),plt.imshow(img,'gray')#默认彩色，另一种彩色bgr
 plt.subplot(1,2,2),plt.imshow(blur,'gray')
 
-
+#展示img
+cv2.imshow("mtest",img)
+#展示blur
 cv2.imshow("mtest",blur)
+#展示时间
 cv2.waitKey(1100000)
